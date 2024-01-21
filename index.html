@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Switch</title>
+  </head>
+  <body>
+    <h1>Change Color By event Listner</h1>
+
+    <div class="main">
+      <button id="red"  onclick="changeBodyColor(this)">Red</button>
+      <button id="blue" onclick=changeBodyColor(this)>Blue</button>
+      <button id="green" onclick=changeBodyColor(this)>green</button>
+      <button id="orange" onclick=changeBodyColor(this)>orange</button>
+      <button id="black" onclick=changeBodyColor(this)>pink</button>
+      <button id="yellow" onclick=changeBodyColor(this)>yellow</button>
+      <button id="white" onclick=changeBodyColor(this)>white</button>
+    </div>
+    <script>
+      
+const changeBodyColor=(button)=>{
+  if(button.textContent==='Red')
+  {
+    document.body.style.backgroundColor='red'
+  }
+  else if(button.textContent==='Blue')
+  {
+    document.body.style.backgroundColor='blue'
+  }
+  else if(button.textContent==='green')
+  {
+    document.body.style.backgroundColor='green'
+  }
+  else if(button.textContent==='orange')
+  {
+    document.body.style.backgroundColor='orange'
+  }
+  else if(button.textContent==='yellow')
+  {
+    document.body.style.backgroundColor='yellow'
+  }
+  else if(button.textContent==='pink')
+  {
+    document.body.style.backgroundColor='pink'
+  }
+  else if(button.textContent==='white')
+  {
+    document.body.style.backgroundColor='white'
+  }
+  else{
+    document.body.style.backgroundColor='white'
+  }
+}
+console.log(changeBodyColor(),'click')
+    </script>
+  </body>
+</html>
